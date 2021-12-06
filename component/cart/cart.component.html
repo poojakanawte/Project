@@ -1,0 +1,88 @@
+<html>
+   
+<header>
+    <h1 style="text-align:center " >Cart</h1>
+    
+</header>
+   <body>
+     <!-- Navigation -->
+     <ng-container *ngIf = "productInfo.length != 0">
+      <div class="container">
+          <div class="cart-table">
+              <div class="cart-product">
+                  <table class= "table table-responsive">
+                      <thead>
+                          <tr>
+                            <th>Product Id</th>
+                              
+                              <th>Product Name</th>
+                              <th>Product Image</th>
+                              <th>Product Description</th>
+                              <th>Category</th>
+                              <th>Price</th>
+                              <th>Available Quantity</th>
+                              <th>Delete product</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr *ngFor = "let p of productInfo; let i = index">
+                              
+                              <td>{{p.productId}}</td>
+                              <td>{{p.productName}}</td>
+                              <td><img src={{p.imagePath}} style = "width:250px;height:250px"></td>
+                              <td>{{p.productDescription}}</td>
+                              <td>{{p.category}}</td>
+                              <td>{{p.price}}</td>
+                              <td>{{p.availableQuantity}}</td>
+                             <td>
+                              <button class="btn btn-danger"  (click)="deleteDataMethod(p.productId)"><i class="fas fa-trash-alt"></i></button> 
+                             </td>
+                             <tr>
+
+                                <td colspan="6"></td>
+        
+                                
+        
+                                <td><button routerLink="/newbooks" class="btn btn-primary">Shop More</button></td>
+        
+                                <td><button  [routerLink]="['/payment']" class="btn btn-success">Checkout</button></td>
+        
+                                
+                            </tr>
+                         
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      </div>
+     </ng-container>
+     <ng-container *ngIf="productInfo.length ==0">
+
+        <div class="container">
+    
+        <div class="card">
+    
+            <h5 class="card-title">My cart</h5>
+    
+        </div>
+    
+        <div class="center">
+    
+            <img src="assets/cart.png" alt="">
+    
+            <h4>Your cart is empty!</h4>
+    
+            <h6>Add items to it</h6>
+    
+            <button routerLink="/newbooks" class="btn btn-primary">Shop Now</button>
+    
+        </div>
+    
+    </div>
+    
+    </ng-container>
+     
+     
+          </body>
+          </html>
+    

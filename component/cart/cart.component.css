@@ -1,0 +1,110 @@
+.card{
+  height:90vh;
+  margin:25px;
+  padding:25px
+}
+.center{
+  position: absolute;
+  top:150%;
+  left :50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.center img{
+  text-decoration: none;
+  color:inherit;
+  border: none;
+  height:262px;
+  width:262px;
+  margin:20px 0px;
+}
+.cart-table{
+  margin-top:10px;
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  min-width: none;
+  word-wrap: break-word;
+  background-color: white;
+  background-clip: border-box;
+  border:1px solid rgba(0,0,0,2);
+  border-radius: .25rem;
+}
+button{
+margin-top: -8px;
+padding-top: -18px; 
+
+
+}
+.card_title{
+  position: relative;
+  left: 470px;
+}
+.card{
+
+  height: 60vh;
+
+  margin: 25px;
+
+  padding: 25px;
+
+}
+h4,h6{
+
+  font-weight: 400;  
+
+}
+
+.center {
+
+  position: absolute;
+
+  top: 50%;
+
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+
+}
+.default {
+  border-color:black;
+  width:100px;
+  height:35px;
+  color: black;
+  margin-top: 8px;
+}
+.default:hover {
+  font-style:unset;
+  color: green;
+}
+.btn-danger{
+  width:100px;
+  height:35px;
+  margin-top: 8px;
+}
+.center .btn{
+
+  font-size: 14px !important;
+
+  margin-top: 20px !important;
+
+  font-weight: 400;
+
+  padding: 12px 72px;
+
+  border-radius: 3px !important;
+
+}
+.main{
+  
+  color:rgb(4, 55, 66);
+
+
+}
+.btn
+{
+  margin-top: -8px;
+size: 5rem;
+}

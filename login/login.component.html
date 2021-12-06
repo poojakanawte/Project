@@ -1,0 +1,29 @@
+<html lang="en" dir="ltr">
+  <head>
+    
+    
+  </head>
+  <body>
+    <div class="center">
+      <h1>Login</h1>
+      <form (ngSubmit)="getUser({UserName:pusername.value,pass:+ppassword.value})" method="get">
+        <div class="txt_field">
+          <input type="text" #pusername>
+          <span></span>
+          <label>Username</label>
+        </div>
+        <div class="txt_field">
+          <input type="number" #ppassword>
+          <span></span>
+          <label>Password</label>
+        </div>
+       
+        <input type="submit" value="Login">
+        <div class="signup_link">
+          Not a member? <a [routerLink]="['/signup']" >Signup</a>
+        </div>
+      </form>
+    </div>
+
+  </body>
+</html>

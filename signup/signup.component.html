@@ -1,0 +1,39 @@
+<html lang="en" dir="ltr">
+  <head>
+    
+    
+  </head>
+  <body>
+    <div class="center">
+     
+      <div class="text-center">
+        <h1>Sign up</h1>
+        <h6>Register Yourself!!</h6>
+    </div>
+      
+      <form (submit)="sendUserData({UserName:pusername.value,pass:+ppassword.value})">
+        <div class="txt_field">
+          <input type="text" #pusername>
+          <span></span>
+          <label>Username</label>
+        </div>
+        <div class="txt_field">
+          <input type="number" #ppassword>
+          <span></span>
+          <label>Password</label>
+          </div>
+         
+         
+       
+        <div class="mb-3">
+        </div>
+        
+        <input type="submit" value="Signup"[routerLink]="['/login']" >
+        <div class="signup_link">
+       <a [routerLink]="['/login']" ></a>
+        </div>
+      </form>
+    </div>
+
+  </body>
+</html>
